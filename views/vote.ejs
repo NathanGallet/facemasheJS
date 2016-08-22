@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Vote !</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		
+		<div class="container">
+		<div class="row">
+
+			<div class="col-md-2 col-md-offset-5 col-centered"><h1>Vote !</h1></div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-2"></div>
+
+
+			<div class="col-md-4">
+				<div class="row"> 
+					<img id="vote" src="http://www.loire.fr/upload/docs/image/jpeg/2016-06/elodie-clouvel.jpg.associated/th-940x1000-elodie-clouvel.jpg.jpg" class="img-responsive center">
+				</div>
+				<div class="row">
+					<h2 class="center">Élodie Clouvel</h2>
+					</div>
+			</div>
+			
+
+			<div class="col-md-4">
+				<div class="row"> 
+					<img id="vote" src="http://www.sportmag.fr/images/articles/3037/_thumb1/iconsportnoe30111320046.jpg" class="img-responsive center">
+				</div>
+				<div class="row">
+					<h2 class="center">Ysaora Thibus</h2>
+					</div>
+			</div>
+			<div class="col-md-2"></div>
+
+		</div>
+
+
+	</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/snabbt.min.js"></script>
+		<script>
+
+			$('.img-responsive')
+			.mouseenter(function(){
+				$(this).snabbt({
+					scale: [1.1, 1.1],
+					easing: 'ease',
+					duration: 100
+				});
+			})
+			.mouseleave(function(){
+				$(this).snabbt({
+					scale: [1, 1],
+					easing: 'easeOut',
+					duration: 100
+				});
+			})
+			.css( 'cursor', 'pointer' );
+
+
+		</script>
+  </body>
+</html>
