@@ -1,0 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Abel';
+html, body, div {
+	background-color: #0E262A;
+	color: #d6d6d6;
+	font-family: 'Abel', sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
